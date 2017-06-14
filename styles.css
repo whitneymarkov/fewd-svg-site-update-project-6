@@ -1,0 +1,205 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 300;
+    color: #111;
+    background: url('./svgs/background.svg') #edeff0;
+}
+#container {
+    max-width: 960px;
+    background: #fff;
+    margin: 0 auto;
+}
+p {
+    max-width: 350px;
+    margin: 35px auto 0;
+    line-height: 2em;
+    text-align: left;
+}
+a {
+    text-decoration: none;
+    color: #39add1;
+    font-weight: 700;
+}
+a:hover {
+    color: #111;
+}
+header {
+    padding-top: 10px;
+}
+header nav {
+    padding-bottom: 50px;
+    text-align: left;
+}
+header nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+header nav ul li a img {
+    height: 13px;
+}
+header h1 {
+    line-height: 1em;
+}
+main {
+    padding-top: 50px;
+}
+main h2 {
+    font-size: 28px;
+}
+main ul {
+    padding: 0;
+}
+main li {
+    display: inline-block;
+    color: #ba8058;
+    margin-right: 20px;
+}
+main li img {
+    margin-bottom: 15px;
+}
+main li span {
+    margin-left: -40px;
+}
+main li:last-child {
+    margin-right: 0;
+}
+footer {
+    width: 100%;
+    margin-top: 100px;
+    padding-bottom: 30px;
+    color: #ba8058;
+}
+
+/*-------------------------------------------
+Navigation
+-----------------------------------------------*/
+
+.heart,
+.location,
+.contact {
+    transform: scale(.7);
+    fill: #39add1;
+    transition: fill .5s ease-in, transform .7s ease-out;
+    transform-origin: 50% 50%;
+    overflow: visible;
+}
+header nav ul li:hover a {
+    transition: color .5s ease-out;
+}
+header nav ul li:hover a {
+    color: #ff785d;
+}
+header nav ul li:hover .heart,
+header nav ul li:hover .location,
+header nav ul li:hover .contact {
+    fill: #ff785d;
+    transform: scale(1);
+}
+
+/*-------------------------------------------
+SVG logo colours
+-----------------------------------------------*/
+
+.logo {
+    max-width: 140px;
+    max-height: 120px;
+    margin: 0 auto;
+}
+.logo .st1 {
+    opacity: 0;
+}
+.title-mobile {
+    color: #EAAA7F;
+}
+
+/*-------------------------------------------
+Dog images
+-----------------------------------------------*/
+
+.dog-images {
+    width: 170px;
+    height: 170px;
+}
+.dog-images .eyes {
+    fill: #282c34;
+}
+
+/* Corgi 1 */
+
+.corgi-red .fur {
+    fill: #b33503;
+}
+.corgi-red .snout {
+    fill: #ff785d;
+}
+.corgi-red .nose {
+    fill: #296673;
+}
+.corgi-red .brows,
+.corgi-red .ear {
+    fill: #eba484;
+}
+
+/* Corgi 2 */
+
+.corgi-fawn .fur {
+    fill: #995b68;
+}
+.corgi-fawn .snout {
+    fill: #f2c2c2;
+}
+.corgi-fawn .nose {
+    fill: #7a967a;
+}
+.corgi-fawn .brows,
+.corgi-fawn .ear {
+    fill: #c49399;
+}
+
+/* Corgi 3 */
+
+.corgi-sable .fur {
+    fill: #f2d4a6;
+}
+.corgi-sable .snout {
+    fill: #c7a57e;
+}
+.corgi-sable .nose {
+    fill: #716996;
+}
+.corgi-sable .brows,
+.corgi-sable .ear {
+    fill: #739694;
+}
+
+/* Corgi 4 */
+
+.corgi-bt .fur {
+    fill: #4a8a71;
+}
+.corgi-bt .snout {
+    fill: #97c4b6;
+}
+.corgi-bt .nose {
+    fill: #506796;
+}
+.corgi-bt .brows,
+.corgi-bt .ear {
+    fill: #9ad691;
+}
+
+/*-------------------------------------------
+Media queries
+-----------------------------------------------*/
+
+@media only screen and (min-width: 425px) {
+    .title-mobile {
+        display: none;
+    }
+    .logo .st1 {
+        opacity: 1;
+    }
+}
