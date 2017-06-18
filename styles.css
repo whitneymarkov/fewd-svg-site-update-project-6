@@ -29,15 +29,15 @@ a:hover {
 header {
     padding-top: 10px;
 }
-header nav {
+nav {
     padding-bottom: 50px;
     text-align: left;
 }
-header nav ul li {
+nav li {
     display: inline-block;
     margin-right: 20px;
 }
-header nav ul li a img {
+nav img {
     height: 13px;
 }
 header h1 {
@@ -57,10 +57,10 @@ main li {
     color: #ba8058;
     margin-right: 20px;
 }
-main li img {
+main img {
     margin-bottom: 15px;
 }
-main li span {
+main span {
     margin-left: -40px;
 }
 main li:last-child {
@@ -82,19 +82,19 @@ Navigation
 .contact {
     transform: scale(.7);
     fill: #39add1;
-    transition: fill .5s ease-in, transform .7s ease-out;
+    transition: fill .3s ease-in, transform .7s ease-out;
     transform-origin: 50% 50%;
     overflow: visible;
 }
-header nav ul li:hover a {
-    transition: color .5s ease-out;
+li:hover a {
+    transition: color .3s ease-out;
 }
-header nav ul li:hover a {
+li:hover a {
     color: #ff785d;
 }
-header nav ul li:hover .heart,
-header nav ul li:hover .location,
-header nav ul li:hover .contact {
+li:hover .heart,
+li:hover .location,
+li:hover .contact {
     fill: #ff785d;
     transform: scale(1);
 }
